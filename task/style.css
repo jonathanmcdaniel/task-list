@@ -2,6 +2,13 @@ body{
 	text-align: center;
 	background-color: #034567;
 	color: white;
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+}
+
+#footer {
+	font-style: italic;
+	font-size: 10pt;
+	font-weight: lighter;
 }
 
 #itemList {
@@ -17,6 +24,7 @@ body{
 	-moz-box-shadow: 0px 0px 15px #303030;
 	-webkit-box-shadow: 0px 0px 15px #303030;
 	box-shadow: 0px 0px 10px #000;
+	border: 1px solid #000;
 	text-align: center;
 	color: white;
 	margin: 15px auto; 
@@ -26,3 +34,4 @@ body{
  #taskField {
  	color: black;
  }
+ 

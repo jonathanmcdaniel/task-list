@@ -12,7 +12,11 @@ $(document).ready(function(){
 		}
 	});
 	$(document).on('click','.item',function(){
-		$(this).remove();
+		$(this).animate({
+			opacity: 0
+		}, 250, function(){
+			$(this).remove();
+		});
 	});
 	$('#itemList').sortable();
 });
