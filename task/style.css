@@ -1,11 +1,48 @@
-body{
+body {
+	margin: 5% auto;
 	text-align: center;
 	background-color: #034567;
-	color: white;
+	color: #FFF;
 	font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
 }
 
-#footer {
+.formContainerCenter {
+	background-color: #F7F7CD;
+	border: 5px solid #000;
+	margin: 0 auto;
+	padding: 10px;
+	width: 30%;
+	max-width: 30%;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 30px #000;
+	-moz-box-shadow: 10px 10px 30px #000;
+	-webkit-box-shadow: 10px 10px 30px #000;
+	color: #000;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+}
+
+.formContainerTop {
+	background-color: #034567;
+	color: #FFF;
+	position: relative;
+}
+
+#start {
+	font-size: 10pt;
+	font-style: italic;
+}
+
+ #taskField {
+ 	color: black;
+ }
+
+  #instructions {
+ 	margin: 0 auto;
 	font-style: italic;
 	font-size: 10pt;
 	font-weight: lighter;
@@ -20,10 +57,9 @@ body{
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	box-shadow: 0px 0px 15px 0px 303030;
-	-moz-box-shadow: 0px 0px 15px #303030;
-	-webkit-box-shadow: 0px 0px 15px #303030;
-	box-shadow: 0px 0px 10px #000;
+	box-shadow: 10px 10px 30px #000;
+	-moz-box-shadow: 10px 10px 30px #000;
+	-webkit-box-shadow: 10px 10px 30px #000;
 	border: 1px solid #000;
 	text-align: center;
 	color: white;
@@ -31,7 +67,3 @@ body{
 	padding: 5px;
 	max-width: 75%;
 }
- #taskField {
- 	color: black;
- }
- 
