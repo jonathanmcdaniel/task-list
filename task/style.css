@@ -1,0 +1,16 @@
+body{
+	text-align: center;
+	background-color: #034567;
+	color: white;
+}
+
+.item {
+	text-align: center;
+	color: white;
+	margin: 5px auto; 
+	padding: 5px;
+	max-width: 75%;
+}
+ #taskField {
+ 	color: black;
+ }
