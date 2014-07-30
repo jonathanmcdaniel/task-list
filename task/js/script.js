@@ -20,25 +20,25 @@ $(document).ready(function(){
 		//Ensures that text for task has been entered
 		if (taskTitle !== ""){
 			if ($('.item').length === 0){
-				var status = 'top'
+				var status = 'top';
 				restyle(status);
 			}
 			//Creates title and description paragraph elements around the data
-			taskTitle = '<p class="itemTitle">' + taskTitle +'</p>'
-			taskDescription = '<p class="itemDescription">' + taskDescription +'</p>'
+			taskTitle = '<p class="itemTitle">' + taskTitle +'</p>';
+			taskDescription = '<p class="itemDescription">' + taskDescription +'</p>';
 			//Checks priority level and sets appropriate style
-			if ($("input[value='low']").is(':checked')){
-				$('#itemList').append("<div class='item' style='background-color: green'>" + taskTitle + taskDescription + "</div>")
+			if ($("input[value='low']").is(":checked")){
+				$('#itemList').append("<div class='item' style='background-color: green'>" + taskTitle + taskDescription + "</div>");
 			}else if($("input[value='medium']").is(':checked')){
-				$('#itemList').append("<div class='item' style='background-color: orange'>" + taskTitle + taskDescription + "</div>")
+				$('#itemList').append("<div class='item' style='background-color: orange'>" + taskTitle + taskDescription + "</div>");
 			}else{
-				$('#itemList').append("<div class='item' style='background-color: red'>" + taskTitle + taskDescription + "</div>")
+				$('#itemList').append("<div class='item' style='background-color: red'>" + taskTitle + taskDescription + "</div>");
 			}
 			//Gives focus back to Title Field
 			$('#taskDescription').val('').blur();
 			$('#taskTitle').val('').focus();
 		}
-	};
+	}
 
 	//Adds item to task list for submit button
 	$('#submit').click(function(){
@@ -54,12 +54,13 @@ $(document).ready(function(){
 		}, 500, function(){
 			$(this).remove();
 			if ($('.item').length === 0){
-				var status = 'center'
+				var status = 'center';
 				restyle(status);
 			} 
 		});
 	});
 
+	var stopSubmission;
 	//Adds title to task list and gives focus to description
 	$('#taskTitle').keydown(function(k){
 		if (k.keyCode === 13){
